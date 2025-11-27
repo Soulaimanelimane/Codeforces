@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
-
+ 
 int main() {
     int n;
     std::cin >> n ;
-
+ 
     int arr[n];
     for (int  i = 0; i < n; i++)
         std::cin >> arr[i];
@@ -51,10 +51,7 @@ int main() {
     
     for (int f = 0; sera[f] != 0 ; f++)
         sum_sera += sera[f];
-        // std::cout <<  sera[f] <<  " "  ;
-    // std::cout <<std::endl;
     for (int f = 0; dima[f] != 0 ; f++)
         sum_dima +=  dima[f];
-        // std::cout <<  dima[f] <<  " "  ;
     std::cout << sum_sera << " " << sum_dima << std::endl;
 }
