@@ -3,6 +3,8 @@
 #include <cstring> 
 #include <stdlib.h>
 
+
+/* first part 
 int main()
 {
     std::string str;
@@ -47,6 +49,24 @@ int main()
         }
         token = strtok(NULL, ",");
 
+    }
+    std::cout << std::endl << adds << std::endl;
+}
+*/
+
+int main()
+{
+    std::string str;
+
+    std::getline(std::cin , str, '\0');
+
+    char *token = strtok((char *)str.c_str(), ",") ;
+
+    size_t adds = 0;
+    while (token)
+    {
+        
+        token = strtok(NULL, ",");
     }
     std::cout << std::endl << adds << std::endl;
 }
